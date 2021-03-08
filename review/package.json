@@ -1,0 +1,25 @@
+{
+  "name": "aspaceit-private-server",
+  "version": "0.0.1",
+  "description": "The server that running on premise in aspaceit",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha ./APIs/users/user.spec.js -w",
+    "start": "node ./bin/www.js",
+    "start-dev": "nodemon ./bin/www.js"
+  },
+  "author": "Jo Yoon Gi",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "sequelize": "^6.5.0",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "mocha": "^8.3.0",
+    "should": "^13.2.3",
+    "supertest": "^6.1.3"
+  }
+}
